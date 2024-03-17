@@ -96,3 +96,21 @@ function getDayOfWeek1(a) {
 }
 
 console.log(getDayOfWeek1(7));
+
+// 3.Задача: Знайти число Фібоначчі
+// Завдання: Напишіть функцію fibonacci, що приймає число n як аргумент і повертає n-те число з послідовності Фібоначчі.
+// Послідовність починається з 0 (нульовий елемент) і 1 (перший елемент), а кожне наступне число є сумою двох попередніх чисел.
+
+function fibonacci(n) {
+    let a = 0;
+    let b = 1;
+    for (let i = 2; i <= n; i++) {
+        let c = a + b;
+        a = b;
+        b = c;
+    }
+    return a;
+}
+
+console.log( fibonacci(0) );
+console.log( fibonacci(4) );
